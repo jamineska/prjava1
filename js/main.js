@@ -4,15 +4,14 @@ Declara una función que acepte una palabra como parámetro y la devuelva con to
 Pasos:
 inicio
 -crear función que acepte una palabra como parámetro
--separar el resultado
--declarar variable
--aplicar la funcion del resultado recorriendo antes
--volver a unir quitando comas y devolviendo resultado
--Escribir resultado de la declaracion
-Fin
-_______
+-separar el resultado de la funcion y guardar en una variable
+-declarar un nuevo array
+-recorriendo el array metiendo cada letra en mayusculas y con un espacio
+-volver a unir transformando en string quitando comas y devolviendo resultado por escrito
 
-/*function transformarMayuscula (marcas){
+Fin */
+
+function transformarMayuscula (marcas){
 let resultado= marcas.split (""); //para separar
 const marcaNueva=[] //para declarar 
 resultado.forEach((marca)=>marcaNueva.push(marca.toUpperCase()+" "))//para recorrer y ponerlas en mayúscula
@@ -20,7 +19,7 @@ const resumo=marcaNueva.join("")
 return resumo
 }
 
-console.log(transformarMayuscula ("ana"))*/
+console.log(transformarMayuscula ("ana"))
 
 
 
@@ -34,7 +33,7 @@ inicio
 -devolver resultado
 -Escribir resultado
 Fin
-_______
+*/
 
 function cantPalabras (nombre) {
     let array= nombre.split (" ")
@@ -42,7 +41,7 @@ function cantPalabras (nombre) {
        return array.length;
    }
 console.log(cantPalabras ("Antonio Alberto Jesús"))
-console.log(cantPalabras ("Antonio Alberto Jesús pedro"))*/
+console.log(cantPalabras ("Antonio Alberto Jesús pedro"))
 
 
 /*Ejercicio 3:
@@ -50,7 +49,7 @@ Diseña un algoritmo que cuente las veces que aparece una determinada letra en u
 
 Pasos:
 inicio
--crear funcion que reciba como parametro una frase y una letra que elijamos dentro de la frase
+-crear funcion que reciba como parametros una frase y una letra que elijamos dentro de la frase
 -crear bucle para reorrer la frase, si la letra que buscamos coincide dentro de la frase aumentamos el contador en uno
 -devolver y escribir resultado
 Fin
